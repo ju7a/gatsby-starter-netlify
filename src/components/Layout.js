@@ -48,7 +48,9 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
-      <div className={"coming-soon-overlay-styling"}>Supaminds - coming soon</div>
+      <Navbar />
+      <div>{children}</div>
+      <Footer />
     </div>
   )
 }
